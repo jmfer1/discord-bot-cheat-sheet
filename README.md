@@ -4,8 +4,8 @@
 
 1. Create folder 
 2. ```cd``` into folder
-3. ```npm install discord.js```
-4. ```npm init```
+3. ```npm init```
+4. ```npm install discord.js```
 5. Create main bot file (e.g. bot.js)
 
 ```sh
