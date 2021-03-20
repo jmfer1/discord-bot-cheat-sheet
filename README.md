@@ -18,6 +18,8 @@ client.login(token);
 
 // Outputs message to console when bot sign ins
 client.once('ready', () => {
-    console.log('Support Bot is online')
+    console.log('Bot is online')
 });
 ```
+
+6. Create (Application in Discord and Bot) [https://discord.com/developers/applications]
