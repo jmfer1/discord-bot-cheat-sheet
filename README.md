@@ -39,3 +39,12 @@ client.on('message', message =>{
     if(!message.content.startswith(prefix) || message.author.bot) return;
 });
 ```
+
+### Ping Pong Sample Command
+
+```sh
+client.on('message', message => {
+
+    if(message.content.toLowerCase() === 'ping')
+        message.channel.send('pong!');
+```
