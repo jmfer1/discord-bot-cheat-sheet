@@ -48,3 +48,24 @@ client.on('message', message => {
     if(message.content.toLowerCase() === 'ping')
         message.channel.send('pong!');
 ```
+
+### Splice (Split and Slice)
+
+Splice allows users to use commands such as ```!check wiki```
+
+```sh
+const args = message.content.slice(prefix.length).split(/ +/);
+const command = args.shift().toLowerCase();
+```
+
+Use case example:
+
+```sh
+client.on('message', message =>{
+    if(!message.content.startswith(prefix) || message.author.bot) return;
+   
+   const args = message.content.slice(prefix.length).split(/ +/);
+   const command = args.shift().toLowerCase();
+
+});
+```
