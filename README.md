@@ -33,4 +33,9 @@ Add the following line to the main bot code to configure a prefix to call the bo
 
 ```sh
 const prefix = "!"
+
+// Break the code if the message does not start with the prefix or if message author is the bot
+client.on('message', message =>{
+    if(!message.content.startswith(prefix) || message.author.bot) return;
+});
 ```
