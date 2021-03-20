@@ -1,6 +1,6 @@
 # Discord Bot Cheat Sheet
 
-## Initiate New Bot Project
+### Initiate New Bot Project
 
 1. Create folder 
 2. ```cd``` into folder
