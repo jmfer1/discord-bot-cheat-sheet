@@ -1,5 +1,13 @@
 # Discord Bot Cheat Sheet
 
+## Initiate New Bot Project
+
+1. Create folder 
+2. cd into folder
+3. ```sh npm install discord.js```
+4. npm init
+5. Create 
+
 ```sh
 const Discord = require('discord.js');
 const { Client, MessageEmbed } = require('discord.js');
