@@ -3,10 +3,10 @@
 ## Initiate New Bot Project
 
 1. Create folder 
-2. cd into folder
+2. ```sh cd``` into folder
 3. ```sh npm install discord.js```
-4. npm init
-5. Create 
+4. ```sh npm init```
+5. Create main bot file (e.g. bot.js)
 
 ```sh
 const Discord = require('discord.js');
