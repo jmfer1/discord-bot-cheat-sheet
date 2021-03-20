@@ -26,3 +26,11 @@ client.once('ready', () => {
 7. Copy Token
 8. Go to [this link](https://discordapi.com/permissions.html), set the permissions, add the ```Client ID``` and copy the link (this is the link for users to add the bot to Discord)
 9. ```node .``` to run the bot
+
+### Bot Prefix
+
+Add the following line to the main bot code to configure a prefix to call the bot (e.g. "!" or "-")
+
+```sh
+const prefix = "!"
+```
