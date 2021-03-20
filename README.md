@@ -25,3 +25,4 @@ client.once('ready', () => {
 6. Create [Application in Discord and Bot](https://discord.com/developers/applications)
 7. Copy Token
 8. Go to [this link](https://discordapi.com/permissions.html), set the permissions, add the ```Client ID``` and copy the link (this is the link for users to add the bot to Discord)
+9. ```node .``` to run the bot
