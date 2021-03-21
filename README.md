@@ -72,7 +72,7 @@ client.on('message', message =>{
 
 ### Code commands in separate files
 
-For bots with several commands, it is recommended to code each command on a separate .js file. For this to work, create a folder ```commands``` in the bot directory
+For bots with several commands, it is recommended to code each command on a separate .js file. For this to work, create a folder ```commands``` in the bot directory and add the code below to the main file:
 
 ```sh
 // Get into other JS files
@@ -88,5 +88,19 @@ const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith(
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
+}
+```
+
+Inside the ```commands``` folder, create individual files for each command
+
+```sh
+module.exports = {
+    name: 'NAME-GOES-HERE',
+    descriptionm: 'DESCRIPTION-GOES-HERE',
+    execute(message, args){
+        
+        // CODE TO EXECUTE WHEN THE COMMAND IS CALLED GOES HERE
+        
+    }
 }
 ```
