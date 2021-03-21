@@ -89,6 +89,17 @@ for(const file of commandFiles){
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
 }
+
+client.on('message', message =>{
+    if(!message.content.startswith(prefix) || message.author.bot) return;
+   
+   const args = message.content.slice(prefix.length).split(/ +/);
+   const command = args.shift().toLowerCase();
+   
+   if(command === 'ping'){
+      client.commands.get('ping').execute(message, args);
+   }
+});
 ```
 
 Inside the ```commands``` folder, create individual files for each command
