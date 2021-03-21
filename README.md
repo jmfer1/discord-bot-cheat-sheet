@@ -69,3 +69,24 @@ client.on('message', message =>{
 
 });
 ```
+
+### Code commands in separate files
+
+For bots with several commands, it is recommended to code each command on a separate .js file. For this to work, create a folder ```commands``` in the bot directory
+
+```sh
+// Get into other JS files
+const fs = require('fs');
+
+// Create a collection to have all commands stored
+client.commands = new Discord.Collection();
+
+//Make sure all files we are reading are JS files
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+
+//Create a for loop to loop through all files and make sure it's getting the correct file
+for(const file of commandFiles){
+    const command = require(`./commands/${file}`);
+    client.commands.set(command.name, command);
+}
+```
