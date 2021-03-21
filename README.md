@@ -102,7 +102,7 @@ client.on('message', message =>{
 });
 ```
 
-Inside the ```commands``` folder, create individual files for each command
+Inside the ```commands``` folder, create individual files for each command (e.g. ping.js)
 
 ```sh
 module.exports = {
