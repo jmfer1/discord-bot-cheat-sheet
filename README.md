@@ -84,7 +84,7 @@ client.commands = new Discord.Collection();
 //Make sure all files we are reading are JS files
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 
-//Create a for loop to loop through all files and make sure it's getting the correct file
+//Create a for loop to loop through all files and make sure it is getting the correct file
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
