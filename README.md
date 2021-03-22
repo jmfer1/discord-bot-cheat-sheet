@@ -107,7 +107,7 @@ Inside the ```commands``` folder, create individual files for each command (e.g.
 ```sh
 module.exports = {
     name: 'NAME-GOES-HERE',
-    descriptionm: 'DESCRIPTION-GOES-HERE',
+    description: 'DESCRIPTION-GOES-HERE',
     execute(message, args){
         
         // CODE TO EXECUTE WHEN THE COMMAND IS CALLED GOES HERE
